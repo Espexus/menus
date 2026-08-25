@@ -1,0 +1,130 @@
+html {
+    font-size: 16px;
+}
+
+:root {
+    --redorange: #e94b2f;
+    --fondo: #fff8ea;
+    --linea: #f2c36b;
+    --sombra: rgba(59, 23, 16, 0.16);
+}
+
+body:has(.menu-especifico) {
+    justify-content: flex-start;
+}
+
+.menu-especifico {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0 auto;
+    max-width: 760px;
+    width: 100%;
+}
+
+.item-menu {
+    align-items: stretch;
+    background: rgba(255, 255, 255, 0.88);
+    border: 2px solid var(--linea);
+    border-radius: 16px;
+    box-shadow: 0 5px 12px var(--sombra);
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    min-height: 138px;
+    overflow: hidden;
+    transition: box-shadow 160ms ease, transform 160ms ease;
+    width: 100%;
+}
+
+.item-menu:hover {
+    box-shadow: 0 8px 18px rgba(59, 23, 16, 0.22);
+    transform: translateY(-2px);
+}
+
+.img-item-menu {
+    aspect-ratio: 1 / 1;
+    align-self: stretch;
+    flex: 0 0 34%;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+    width: 34%;
+}
+
+.textos {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding: 18px 20px;
+}
+
+.precio {
+    align-self: flex-start;
+    background: var(--redorange);
+    border-radius: 999px;
+    color: #ffffff;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    padding: 8px 12px;
+}
+
+.ingredientes {
+    color: #5b3327;
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+.precio,
+.ingredientes {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .menu-especifico {
+        gap: 14px;
+    }
+
+    .item-menu {
+        min-height: 126px;
+    }
+
+    .img-item-menu {
+        flex-basis: 32%;
+        width: 32%;
+    }
+
+    .textos {
+        gap: 6px;
+        padding: 14px 15px;
+    }
+
+    .precio {
+        font-size: 1rem;
+        padding: 7px 10px;
+    }
+
+    .ingredientes {
+        font-size: 0.92rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .menu-especifico {
+        gap: 20px;
+    }
+
+    .item-menu {
+        min-height: 170px;
+    }
+
+    .img-item-menu {
+        flex-basis: 28%;
+        width: 28%;
+    }
+}

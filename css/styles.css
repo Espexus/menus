@@ -46,6 +46,24 @@ body > * {
     transform: rotate(-2deg);
 }
 
+.titulo-secundario {
+    background: rgba(255, 118, 38, 0.18);
+    border: 3px solid var(--orange);
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 rgba(59, 23, 16, 0.55);
+    color: var(--brown);
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 0 auto 24px;
+    padding: 14px 16px 12px;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .descripcion {
     color: var(--brown);
     font-size: 1rem;
@@ -77,7 +95,7 @@ body > * {
     min-height: 100px;
     width: 80%;
     margin: 0 auto;
-    padding: 16px 20px;
+    padding: 40px 20px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
@@ -94,6 +112,42 @@ body > * {
     background: linear-gradient(rgba(255, 201, 40, 0.600), rgba(255, 201, 40, 0.600)), url("../img/comida.jpg");
     background-size: cover;
     background-repeat:  no-repeat;
+}
+
+#menu-hamburguesas {
+    background: linear-gradient(rgba(232, 65, 34, 0.600), rgba(232, 65, 34, 0.600)), url("../img/hamburguesa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#menu-salchipapas {
+    background: linear-gradient(rgba(255, 118, 38, 0.600), rgba(255, 118, 38, 0.600)), url("../img/salchipapa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#menu-pizzas {
+    background: linear-gradient(rgba(255, 201, 40, 0.600), rgba(255, 201, 40, 0.600)), url("../img/pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#menu-dorilocos {
+    background: linear-gradient(rgba(232, 65, 34, 0.600), rgba(232, 65, 34, 0.600)), url("../img/dorilocos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#menu-de-la-casa {
+    background: linear-gradient(rgba(255, 118, 38, 0.600), rgba(255, 118, 38, 0.600)), url("../img/menu_de_la_casa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#menu-bebidas {
+    background: linear-gradient(rgba(255, 201, 40, 0.600), rgba(255, 201, 40, 0.600)), url("../img/bebida.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .tipo-menu:hover,
@@ -120,6 +174,12 @@ body > * {
     .titulo {
         font-size: 6.8rem;
         padding: 22px 24px 18px;
+    }
+
+    .titulo-secundario,
+    #menu-secundario {
+        font-size: 3.8rem;
+        padding: 18px 24px 16px;
     }
 
     .descripcion {
