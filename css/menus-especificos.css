@@ -69,9 +69,8 @@ body:has(.menu-especifico) {
     font-family: "Trebuchet MS", Verdana, sans-serif;
     font-size: 1.15rem;
     font-weight: 900;
-    letter-spacing: 0.03em;
     line-height: 1;
-    padding: 8px 12px;
+    padding: 8px;
 }
 
 .ingredientes {
@@ -105,7 +104,7 @@ body:has(.menu-especifico) {
     }
 
     .precio {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 7px 10px;
     }
 
