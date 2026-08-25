@@ -1,0 +1,137 @@
+:root {
+    --brown: #3b1710;
+    --red: #e84122;
+    --orange: #ff7626;
+    --yellow: #ffc928;
+    --cream: #fff8e5;
+    --white: #fffdf7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff 0%, #fffaf0 58%, #ffe7cf 100%);
+    color: var(--brown);
+    display: flex;
+    flex-direction: column;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    padding: 32px 20px;
+}
+
+body > * {
+    width: min(100%, 430px);
+}
+
+.titulo {
+    background: var(--red);
+    border: 4px solid var(--brown);
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--brown);
+    color: var(--yellow);
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: clamp(3.2rem, 16vw, 5.5rem);
+    letter-spacing: 2px;
+    line-height: 0.9;
+    margin: 0 auto 18px;
+    padding: 18px 12px 14px;
+    text-align: center;
+    text-shadow: 3px 3px 0 var(--brown);
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+}
+
+.descripcion {
+    color: var(--brown);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 30px auto 22px;
+    text-align: center;
+}
+
+.descripcion:empty::after {
+    content: "Elige tu antojo y disfruta el sabor";
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tipo-menu {
+    align-items: center;
+    border: 4px solid var(--brown);
+    border-radius: 14px;
+    box-shadow: 3px 3px 0 var(--brown);
+    color: var(--white);
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 900;
+    justify-content: center;
+    min-height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+#menu-almuerzos {
+    background: linear-gradient(rgba(255, 118, 38, 0.600), rgba(255, 118, 38, 0.600)), url("../img/almuerzos.jpg");
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+#menu-comidas-rapidas {
+    background: linear-gradient(rgba(255, 201, 40, 0.600), rgba(255, 201, 40, 0.600)), url("../img/comida.jpg");
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+.tipo-menu:hover,
+.tipo-menu:focus-visible {
+    box-shadow: 2px 2px 0 var(--brown);
+    outline: none;
+    transform: translate(2px, 2px) rotate(1deg);
+}
+
+.tipo-menu:active {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+
+@media (min-width: 700px) {
+    body {
+        padding: 56px 32px;
+    }
+
+    body > * {
+        width: min(100%, 720px);
+    }
+
+    .titulo {
+        font-size: 6.8rem;
+        padding: 22px 24px 18px;
+    }
+
+    .descripcion {
+        font-size: 1.15rem;
+        margin-bottom: 28px;
+    }
+
+    .menus {
+        flex-direction: column;
+    }
+
+    .tipo-menu {
+        min-height: 112px;
+    }
+}
