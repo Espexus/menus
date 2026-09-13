@@ -27,7 +27,8 @@ body:has(.menu-especifico) {
     font-weight: 900;
     justify-content: center;
     line-height: 1;
-    margin: 0 0 24px auto;
+    margin: 0 auto;
+    margin-bottom: 24px;
     min-width: 104px;
     padding: 11px 18px;
     text-decoration: none;
